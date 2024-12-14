@@ -5,7 +5,7 @@ import App from './components/App'
 import "modern-normalize";
 
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.querySelector('#root')).render(
   <StrictMode>
     <App />
   </StrictMode>,

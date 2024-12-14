@@ -1,6 +1,6 @@
 import css from "./Options.module.css";
 
-const Options = ({ onGood, onNeutral, onBad, onReset }) => {
+const Options = ({ onGood, onNeutral, onBad, onReset, total }) => {
   return (
     <div className={css.buttonBox}>
       <button onClick={onGood} className={css.button} type="button">
@@ -12,9 +12,11 @@ const Options = ({ onGood, onNeutral, onBad, onReset }) => {
       <button onClick={onBad} className={css.button} type="button">
         Bad
       </button>
-      <button onClick={onReset} className={css.button} type="button">
-        Reset
-      </button>
+      {total > 0 && (
+        <button onClick={onReset} className={css.button} type="button">
+          Reset
+        </button>
+      )}
     </div>
   );
 };

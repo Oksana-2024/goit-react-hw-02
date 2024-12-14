@@ -1,0 +1,15 @@
+.buttonBox {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    width: 100%;
+    align-items: start;
+}
+
+.button{
+   border: 1px solid var(--gray); 
+   border-radius: 4px;
+   padding:4px 6px;
+   background-color: var( --button-background);
+   color: var(--button-color-text);
+}

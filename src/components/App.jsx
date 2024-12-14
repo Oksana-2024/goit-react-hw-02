@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.module.css";
-import Description from "./Descroption/Description";
+import Description from "./Description/Description";
 import Feedback from "./Feedback/Feedback";
 import Options from "./Options/Options";
+import Notification from "./Notification/Notification";
 
 function App() {
   const onReset = () => {
@@ -51,7 +52,7 @@ function App() {
           positive={positive}
         />
       ) : (
-        <p>No feedback yet</p>
+        <Notification />
       )}
     </>
   );

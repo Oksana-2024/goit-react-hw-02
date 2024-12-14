@@ -1,5 +1,4 @@
 import css from "./Feedback.module.css";
-import { useState } from 'react';
 
 const Feedback = ({ good, neutral, bad, total, positive }) => {
     
